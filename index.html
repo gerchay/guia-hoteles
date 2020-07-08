@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
 
     <title>Hello, world!</title>
   </head>
@@ -16,50 +17,124 @@
         <h1 class="display-3">Hoteles</h1>
       </div>
     </div>
+
     <div class="container">
       <!-- FILA 1 -->
       <div class="row">
         <div class="col-md-4">
-          <h2>¿Cómo funciona?</h2>
-          <p>Buscá los hoteles de acuerdo a tu preferencia.</p>
+          <p>
+            <h2>¿Cómo funciona?</h2>
+            <p>Buscá los hoteles de acuerdo a tu preferencia.</p>
+          </p>
         </div>
         <div class="col-md-4">
-          <h2>¿Dónde puedo reservar?</h2>
-          <p>Elige la ciudad que te interese y luego realizá la reserva con tus datos.</p>
+          <p>
+            <h2>¿Dónde puedo reservar?</h2>
+            <p>Elige la ciudad que te interese y luego realizá la reserva con tus datos.</p>
+          </p>
         </div>
         <div class="col-md-4">
-          <h2>¿Cómo pago?</h2>
-          <p>Utiliza tu tarjeta favorita.</p>
+          <p>
+            <h2>¿Cómo pago?</h2>
+            <p>Utiliza tu tarjeta favorita.</p>
+          </p>
         </div>
       </div>
       <hr>
-    </div>
       <!-- FILA 2 -->
-    <div class="row">
-        <div class="col-md-3">
-          <h2>Hotel Barcelona</h2>
-          <p>Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa</p>
-          <p><a class="btn btn-secondary" href="#" role="button">Reservar</a></p>
+      <div class="d-flex flex-wrap flex-row-reverse">
+        <div class="card-hotel d-flex flex-column justify-content-lg-between">
+          <div>
+            <h2>Hotel Barcelona</h2>
+            <p>Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa</p>
+          </div>
+          <div>
+            <button class="btn btn-primary btn-reversa">Reservar</button>
+          </div>
         </div>
-        <div class="col-md-3">
-          <h2>Hotel Buenos Aires</h2>
-          <p>Hotel ubicado en pleno centro</p>
-          <p><a class="btn btn-secondary" href="#" role="button">Reservar</a></p>
+        <div class="card-hotel d-flex flex-column justify-content-lg-between">
+          <div>
+            <h2>Hotel Buenos Aires</h2>
+            <p>Hotel ubicado en pleno centro</p>
+          </div>
+          <div>
+            <button class="btn btn-primary btn-reversa">Reservar</button>
+          </div>
         </div>
-        <div class="col-md-3">
-          <h2>Hotel Lima</h2>
-          <p>Hotel ubicado en pleno centro</p>
-          <p><a class="btn btn-secondary" href="#" role="button">Reservar</a></p>
+        <div class="card-hotel d-flex flex-column justify-content-lg-between">
+          <div>
+            <h2>Hotel Lima</h2>
+            <p>Hotel ubicado en pleno centro</p>
+          </div>
+          <div>
+            <button class="btn btn-primary btn-reversa">Reservar</button>
+          </div>
         </div>
-        <div class="col-md-3">
-          <h2>Hotel Rio de Janeiro</h2>
-          <p>Hotel ubicado en pleno centro de Janeiro a pocos metros de la playa</p>
-          <p><a class="btn btn-secondary" href="#" role="button">Reservar</a></p>
+        <div class="card-hotel d-flex flex-column justify-content-lg-between">
+          <div>
+            <h2>Hotel Rio de Janeiro</h2>
+            <p>Hotel ubicado en pleno centro de Janeiro a pocos metros de la playa</p>
+          </div>
+          <div>
+            <button class="btn btn-primary btn-reversa">Reservar</button>
+          </div>
+        </div>
+        <div class="card-hotel d-flex flex-column justify-content-lg-between">
+          <div>
+            <h2>Hotel Barcelona</h2>
+            <p>Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa</p>
+          </div>
+          <div>
+            <button class="btn btn-primary btn-reversa">Reservar</button>
+          </div>
+        </div>
+        <div class="card-hotel d-flex flex-column justify-content-lg-between">
+          <div>
+            <h2>Hotel Buenos Aires</h2>
+            <p>Hotel ubicado en pleno centro</p>
+          </div>
+          <div>
+            <button class="btn btn-primary btn-reversa">Reservar</button>
+          </div>
+        </div>
+        <div class="card-hotel d-flex flex-column justify-content-lg-between">
+          <div>
+            <h2>Hotel Lima</h2>
+            <p>Hotel ubicado en pleno centro</p>
+          </div>
+          <div>
+            <button class="btn btn-primary btn-reversa">Reservar</button>
+          </div>
         </div>
       </div>
-      <hr>
-    </div>
 
+    </div>
+      
+    <footer>
+      <div class="row">
+        <div class="col-sm-4 d-flex flex-column">
+          <a href="http://www.facebook.com">Facebook</a>
+          <a href="http://www.instagram.com">Instagram</a>
+          <a href="http://www.twitter.com">Twitter</a>
+          <a href="http://www.google.com">Google</a>
+        </div>
+        <div class="col-sm-4">
+          <address>
+            <h3>Oficina Central</h3>
+            <p>Tucum 834, CABA, Argentina</p>
+            <p>+599111234567</p>
+            <p>contacto@guiahoteles.com</p>
+          </address>
+        </div>
+        <div class="col-sm-4 d-flex flex-column">
+          <a href="#">Nosotros</a>
+          <a href="#">Precios</a>
+          <a href="#">Terminos y condiciones</a>
+          <a href="#">Contacto</a>
+        </div>
+      </div>
+      
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
