@@ -1,6 +1,7 @@
 .jumbotron{
-    background-color: yellow;
+    background-color: rgb(247, 247, 94);
     color: black;
+    margin-top: 50px;
 }
 
 footer{
@@ -19,4 +20,8 @@ footer{
     width: 100%;
     left: 0;
     bottom: 0;
+}
+
+.footer-address-icon{
+    padding-right: 10px ;
 }

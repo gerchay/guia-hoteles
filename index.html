@@ -7,11 +7,29 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/index.css">
 
     <title>Hello, world!</title>
   </head>
   <body>
+    <!-- 'FIXED-TOP' es para que la barra de navegación quede fija-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Hoteles</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active"> <a class="nav-link" href="index.html">Home</a> </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">précio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Términos y Condiciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Cóntacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    
     <div class="jumbotron">
       <div class="container">
         <h1 class="display-3">Hoteles</h1>
@@ -19,6 +37,11 @@
     </div>
 
     <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active"><a href="index.html">Home</a></li>
+        </ol>
+      </nav>
       <!-- FILA 1 -->
       <div class="row">
         <div class="col-md-4">
@@ -49,7 +72,7 @@
             <p>Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa</p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reversa">Reservar</button>
+            <button class="btn btn-primary btn-reversa"><span class="oi oi-plus footer-address-icon"></span>Reservar</button>
           </div>
         </div>
         <div class="card-hotel d-flex flex-column justify-content-lg-between">
@@ -58,7 +81,7 @@
             <p>Hotel ubicado en pleno centro</p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reversa">Reservar</button>
+            <button class="btn btn-primary btn-reversa"><span class="oi oi-plus footer-address-icon"></span>Reservar</button>
           </div>
         </div>
         <div class="card-hotel d-flex flex-column justify-content-lg-between">
@@ -67,7 +90,7 @@
             <p>Hotel ubicado en pleno centro</p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reversa">Reservar</button>
+            <button class="btn btn-primary btn-reversa"><span class="oi oi-plus footer-address-icon"></span>Reservar</button>
           </div>
         </div>
         <div class="card-hotel d-flex flex-column justify-content-lg-between">
@@ -76,7 +99,7 @@
             <p>Hotel ubicado en pleno centro de Janeiro a pocos metros de la playa</p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reversa">Reservar</button>
+            <button class="btn btn-primary btn-reversa"><span class="oi oi-plus footer-address-icon"></span>Reservar</button>
           </div>
         </div>
         <div class="card-hotel d-flex flex-column justify-content-lg-between">
@@ -85,7 +108,7 @@
             <p>Hotel ubicado en pleno centro de Barcelona a pocos metros de la playa</p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reversa">Reservar</button>
+            <button class="btn btn-primary btn-reversa"><span class="oi oi-plus footer-address-icon"></span>Reservar</button>
           </div>
         </div>
         <div class="card-hotel d-flex flex-column justify-content-lg-between">
@@ -94,7 +117,7 @@
             <p>Hotel ubicado en pleno centro</p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reversa">Reservar</button>
+            <button class="btn btn-primary btn-reversa"><span class="oi oi-plus footer-address-icon"></span>Reservar</button>
           </div>
         </div>
         <div class="card-hotel d-flex flex-column justify-content-lg-between">
@@ -103,7 +126,7 @@
             <p>Hotel ubicado en pleno centro</p>
           </div>
           <div>
-            <button class="btn btn-primary btn-reversa">Reservar</button>
+            <button class="btn btn-primary btn-reversa"><span class="oi oi-plus footer-address-icon"></span>Reservar</button>
           </div>
         </div>
       </div>
@@ -113,7 +136,7 @@
     <footer>
       <div class="row">
         <div class="col-sm-4 d-flex flex-column">
-          <a href="http://www.facebook.com">Facebook</a>
+          <a href="http://www.facebook.com"><span class="oi oi-facebook footer-address-icon"></span>Facebook</a>
           <a href="http://www.instagram.com">Instagram</a>
           <a href="http://www.twitter.com">Twitter</a>
           <a href="http://www.google.com">Google</a>
@@ -121,9 +144,9 @@
         <div class="col-sm-4">
           <address>
             <h3>Oficina Central</h3>
-            <p>Tucum 834, CABA, Argentina</p>
-            <p>+599111234567</p>
-            <p>contacto@guiahoteles.com</p>
+            <p><span class="oi oi-home footer-address-icon"></span>Tucum 834, CABA, Argentina</p>
+            <p><span class="oi oi-phone footer-address-icon"></span>+599111234567</p>
+            <p><span class="oi oi-inbox footer-address-icon"></span>contacto@guiahoteles.com</p>
           </address>
         </div>
         <div class="col-sm-4 d-flex flex-column">
