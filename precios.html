@@ -43,54 +43,91 @@
           <li class="breadcrumb-item active" aria-current="page"><a href="#">Precios</a></li>
         </ol>
       </nav>
-      <div class="table-responsive">
-        <table class="table table-striped">
-          <thead class="thead-dark">
-            <th>Guatemala</th>
-            <th>Peten</th>
-            <th>Jutiapa</th>
-            <th>Izabal</th>
-            <th>Zacapa</th>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="oi oi-star"></span></td>
-              <td>Q100</td>
-              <td>Q120</td>
-              <td>Q150</td>
-              <td>Q150</td>
-            </tr>
-            <tr>
-              <td><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
-              <td>Q210</td>
-              <td>Q225</td>
-              <td>Q236</td>
-              <td>Q288</td>
-            </tr>
-            <tr>
-              <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
-              <td>Q333</td>
-              <td>Q350</td>
-              <td>Q380</td>
-              <td>Q399</td>
-            </tr>
-            <tr>
-              <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
-              <td>Q443</td>
-              <td>Q454</td>
-              <td>Q480</td>
-              <td>Q488</td>
-            </tr>
-            <tr>
-              <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
-              <td>Q500</td>
-              <td>Q550</td>
-              <td>Q580</td>
-              <td>Q599</td>
-            </tr>
-          </tbody>
-        </table>
+
+      <ul class="nav nav-pills justify-content-center" role="tablist" id="myTab">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="pill" role="tab" href="#compara" aria-selected="true">Compara</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="pill" role="tab" href="#tarjetas" aria-selected="false">Tarjetas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="pill" role="tab" href="#comen"  aria-selected="false">Comentarios</a>
+        </li>
+      </ul>
+      <!--AREA DE PESTAÑAS-->
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+          <!--TABLA RESPONSIVE-->
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead class="thead-dark">
+                <th>Guatemala</th>
+                <th>Peten</th>
+                <th>Jutiapa</th>
+                <th>Izabal</th>
+                <th>Zacapa</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="oi oi-star"></span></td>
+                  <td>Q100</td>
+                  <td>Q120</td>
+                  <td>Q150</td>
+                  <td>Q150</td>
+                </tr>
+                <tr>
+                  <td><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                  <td>Q210</td>
+                  <td>Q225</td>
+                  <td>Q236</td>
+                  <td>Q288</td>
+                </tr>
+                <tr>
+                  <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                  <td>Q333</td>
+                  <td>Q350</td>
+                  <td>Q380</td>
+                  <td>Q399</td>
+                </tr>
+                <tr>
+                  <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                  <td>Q443</td>
+                  <td>Q454</td>
+                  <td>Q480</td>
+                  <td>Q488</td>
+                </tr>
+                <tr>
+                  <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                  <td>Q500</td>
+                  <td>Q550</td>
+                  <td>Q580</td>
+                  <td>Q599</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+          <div class="d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+              <div class="card-header" style="background-color: blue; color: white;">
+                Tarjetas aceptadas
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Tarjeta básica</li>
+                <li class="list-group-item">Tarjeta VIP</li>
+                <li class="list-group-item">Tarjeta black</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="comen" role="tabpanel" aria-labelledby="comen-tab">
+          <h3>Comentarios</h3>
+        </div>
       </div>
+
+      
       
     </div>
       
