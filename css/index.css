@@ -12,14 +12,14 @@ footer{
 }
 
 .card-hotel{
-    flex:1 150px;
-    padding: 5px;
+    flex:1 200px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .btn-reversa{
     width: 100%;
-    left: 0;
-    bottom: 0;
+    border-radius: 0px;
 }
 
 .footer-address-icon{
