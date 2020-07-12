@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/styles.css">
 
     <title>Hello, world!</title>
   </head>
@@ -179,7 +179,7 @@
             <h2 class="card-title">Hotel San Pablo</h2>
             <h4 class="card-subtitle text-muted">Brazil</h4>
             <p class="card-text">Hotel ubicado en pleno centro</p>
-            <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+            <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
           </div>
           <div>
             <button class="btn btn-primary btn-reversa" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Reservar</button>
@@ -256,7 +256,19 @@
         $('.carousel').carousel({
           interval:3000
         });
+
+        $('#contacto').on('show.bs.modal',function(e){
+          console.log('el modal contacto se esta mostrando');
+          $('#contactoBtn').removeClass('btn-outline-success');
+          $('#contactoBtn').addClass('btn-warning');
+        });
+        $('#contacto').on('hide.bs.modal',function(e){
+          console.log('el modal contacto se esta ocultando');
+          $('#contactoBtn').prop('disable',true);
+        });
       });
     </script>
   </body>
 </html>
+
+
